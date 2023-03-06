@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
                 editTextName.setText("");
                 editTextAge.setText("");
-                editTextAddress.setText("3");
+                editTextAddress.setText("5");
                 radioGroupGender.clearCheck();
             }
         });
