@@ -72,9 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 userList.add(user);
                 Toast.makeText(MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
 
-                editTextName.setText(" ");
-                editTextAge.setText(" ");
-                editTextAddress.setText(" ");
+                editTextName.setText("");
+                editTextAge.setText("");
+                editTextAddress.setText("1");
                 radioGroupGender.clearCheck();
             }
         });
