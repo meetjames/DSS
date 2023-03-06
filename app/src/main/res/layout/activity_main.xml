@@ -56,13 +56,13 @@
             android:orientation="Male পুরুষ">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radioGroupGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="FeMale মহিলা " />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radioGroupGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Transexual হিজড়া" />
@@ -88,62 +88,62 @@
             android:hint="7. What is your occupation? আপনার পেশা কি?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radiooccupation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Unemployed/বেকার">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Unskilled worker/অদক্ষ শ্রমিক" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Semiskilled worker/অর্ধ দক্ষ কর্মী" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radiooccupation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Skilled worker/দক্ষ কর্মী">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clerk,shop owner,farm worker/কেরানি, দোকানের মালিক, খামার-কর্মী" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Semi professional/অর্ধ-পেশাদার" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radiooccupation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Professional/পেশাদার">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Child < 6 yrs/শিশু < ৬ বছর" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other (specify)/অন্যান্য (উল্লেখ করুন)" />
 
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiooccupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Student/ছাত্র" />
@@ -163,75 +163,75 @@
             android:hint="8. What is the relationship to head of household? পরিবারের প্রধানের সাথে কী সম্পর্ক?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radiorelationship"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Head of family/পরিবারের প্রধান">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Husband/স্বামী" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Wife/স্ত্রী" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radiorelationship"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Son/ Daughter / পুত্র/ কন্যা">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daughter/son-in-law/বধূ/ জামাতা" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Grandson/ Granddaughter/নাতি/ নাতনি" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radiorelationship"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Father/Mother/বাবা/ মা">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Brother/sister/ভাই/ বোন" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Uncle/aunt/কাকা/কাকীমা" />
 
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nephew/niece/ভাইপো/ ভাইঝি" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mother/father in law/শ্বশুর/ শাশুড়ি" />
 
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiorelationship"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other (specify)/অন্যান্য (উল্লেখ করুন)" />
@@ -251,37 +251,37 @@
             android:hint="9. What is the marital status? আপনার বৈবাহিক অবস্থা কি?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radiomarital"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Unmarried/অবিবাহিত">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiomarital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Married/বিবাহিত" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiomarital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Separated/পৃথক" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radiomarital"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Divorced/বিবাহবিচ্ছিন্ন">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radiomarital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Widow/Widower/বিধবা/ বিপত্নীক" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radiomarital"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minor/মাইনর" />
@@ -295,25 +295,25 @@
             android:hint="10. What is the literacy status? আপনার সাহিত্যিক অবস্থা কি?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_literacy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Illiterate/নিরক্ষর">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_literacy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Read only/শুধুমাত্র পড়ুন" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radio_literacy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Read and write/পড়া এবং লিখুন" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radio_literacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Child < 6 yrs/6 বছরের কম বয়সী শিশু">
@@ -327,37 +327,37 @@
             android:hint="11. What is the toilet facility you use? আপনি কোন ধরণের শৌচাগার ব্যবহার করেন" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_toilet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Flush/ pour flush/ফ্লাশ পোর ফ্লাশ">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_toilet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pit latrine/পিট ল্যাট্রিন" />
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radio_toilet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dry toilet/শুকনো শৌচাগার" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radio_toilet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Bucket toilet/বালতি যুক্ত শৌচাগার">
 
             <RadioButton
-                android:id="@+id/radioButtonFemale"
+                android:id="@+id/radio_toilet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Open fields/খোলা মাঠ" />
 
             <RadioButton
-                android:id="@+id/radioGroupGender"
+                android:id="@+id/radio_toilet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="Other (specify)/অন্যান্য (উল্লেখ করুন)">
@@ -377,13 +377,13 @@
             android:hint="12. Do you use soap while washing hands after toileting? শৌচের পরে হাত ধোওয়ার সময় আপনি কি সাবান ব্যবহার করেন?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_soap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Yes/হ্যাঁ">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_soap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No/না" />
@@ -397,25 +397,25 @@
             android:hint="13. Do you have accessibility to mobile phone? আপনার কি কোনও মোবাইল ফোন ব্যবহারের সুযোগ রয়েছে?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_phone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Yes, personal/হ্যাঁ, ব্যক্তিগত">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Yes, family member/হ্যাঁ, পরিবারের সদস্য" />
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No phone access/কোনো ফোন নেই" />
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Not applicable/প্রযোজ্য নয়" />
@@ -429,13 +429,13 @@
             android:hint="14. Do you have health insurance? আপনার কি স্বাস্থ্য বীমা আছে?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_insurance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Yes/হ্যাঁ -> Complete Q.14.1">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_insurance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No/না -> This form is completed" />
@@ -449,25 +449,25 @@
             android:hint="14.1 If yes, what type of health insurance?<br>যদি হ্যাঁ, তবে স্বাস্থ্য বীমাটি কী ধরণের?" />
 
         <RadioGroup
-            android:id="@+id/radioGroupGender"
+            android:id="@+id/radio_insuranceTyp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="Government/সরকারী">
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_insuranceTyp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Private/বেসরকারী " />
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_insuranceTyp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Defence/প্রতিরক্ষা" />
 
             <RadioButton
-                android:id="@+id/radioButtonMale"
+                android:id="@+id/radio_insuranceTyp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Other (specify)/অন্যান্য (উল্লেখ করুন)" />
