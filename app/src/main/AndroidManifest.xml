@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DSS">
         <activity
-            android:name=".MainActivity"
+            android:name=".DSS03_MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

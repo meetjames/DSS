@@ -15,9 +15,9 @@ import java.util.ArrayList;
 
 public class DSS03_DB extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "UserDatabase";
+    private static final String DATABASE_NAME = "DSS_hodal";
     private static final int DATABASE_VERSION = 1;
-    private static final String TABLE_NAME = "user";
+    private static final String TABLE_NAME = "dss03_member_details";
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";
     private static final String KEY_AGE = "age";

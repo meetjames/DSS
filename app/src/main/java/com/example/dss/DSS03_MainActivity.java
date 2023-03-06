@@ -19,12 +19,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class DSS03_MainActivity extends AppCompatActivity {
 
     private EditText editTextName, editTextAge, editTextAddress;
     private RadioGroup radioGroupGender;
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (name.isEmpty() || ageString.isEmpty() || address.isEmpty() || gender == -1) {
-                    Toast.makeText(MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DSS03_MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -70,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
                 DSS03_declare user = new DSS03_declare(name, age, genderString, address);
                 userDatabase.addUser(user);
                 userList.add(user);
-                Toast.makeText(MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DSS03_MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
 
                 editTextName.setText("");
                 editTextAge.setText("");
-                editTextAddress.setText("1");
+                editTextAddress.setText("");
                 radioGroupGender.clearCheck();
             }
         });
