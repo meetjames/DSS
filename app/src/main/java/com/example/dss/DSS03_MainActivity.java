@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroupGender;
     private Button buttonSave;
 
-    private UserDatabase userDatabase;
-    private ArrayList<User> userList;
+    private DSS03_DB userDatabase;
+    private ArrayList<DSS03_declare> userList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         radioGroupGender = findViewById(R.id.radioGroupGender);
         buttonSave = findViewById(R.id.buttonSave);
 
-        userDatabase = new UserDatabase(this);
+        userDatabase = new DSS03_DB(this);
         userList = userDatabase.getAllUsers();
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 int age = Integer.parseInt(ageString);
-                User user = new User(name, age, genderString, address);
+                DSS03_declare user = new DSS03_declare(name, age, genderString, address);
                 userDatabase.addUser(user);
                 userList.add(user);
                 Toast.makeText(MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
