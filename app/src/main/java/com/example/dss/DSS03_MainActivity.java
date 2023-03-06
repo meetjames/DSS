@@ -24,14 +24,14 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 import java.util.ArrayList;
 
-public class DSS03_MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private EditText editTextName, editTextAge, editTextAddress;
     private RadioGroup radioGroupGender;
     private Button buttonSave;
 
-    private DSS03_DB dss03_db;
-    private ArrayList<DSS03_declare> userList;
+    private UserDatabase userDatabase;
+    private ArrayList<User> userList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +44,8 @@ public class DSS03_MainActivity extends AppCompatActivity {
         radioGroupGender = findViewById(R.id.radioGroupGender);
         buttonSave = findViewById(R.id.buttonSave);
 
-        dss03_db = new DSS03_DB(this);
-        userList = dss03_db.getAllUsers();
+        userDatabase = new UserDatabase(this);
+        userList = userDatabase.getAllUsers();
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,19 +62,19 @@ public class DSS03_MainActivity extends AppCompatActivity {
                 }
 
                 if (name.isEmpty() || ageString.isEmpty() || address.isEmpty() || gender == -1) {
-                    Toast.makeText(DSS03_MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 int age = Integer.parseInt(ageString);
-                DSS03_declare user = new DSS03_declare(name, age, genderString, address);
-                dss03_db.addUser(user);
+                User user = new User(name, age, genderString, address);
+                userDatabase.addUser(user);
                 userList.add(user);
-                Toast.makeText(DSS03_MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "User added successfully", Toast.LENGTH_SHORT).show();
 
                 editTextName.setText("");
                 editTextAge.setText("");
-                editTextAddress.setText("");
+                editTextAddress.setText("1");
                 radioGroupGender.clearCheck();
             }
         });
