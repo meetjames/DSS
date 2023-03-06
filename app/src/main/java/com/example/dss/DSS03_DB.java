@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class DSS03_DB extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "DSS_hodal";
+    private static final String DATABASE_NAME = "Ddss_hodal";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_NAME = "dss03_member_details";
     private static final String KEY_ID = "id";
@@ -57,23 +57,23 @@ public class DSS03_DB extends SQLiteOpenHelper {
         db.close();
     }
 
-    public ArrayList<DSS03_declare> getAllUsers() {
-        ArrayList<DSS03_declare> userList = new ArrayList<>();
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
-        if (cursor.moveToFirst()) {
-            do {
-                DSS03_declare user = new DSS03_declare();
-                user.setId(Integer.parseInt(cursor.getString(0)));
-                user.setName(cursor.getString(1));
-                user.setAge(Integer.parseInt(cursor.getString(2)));
-                user.setGender(cursor.getString(3));
-                user.setAddress(cursor.getString(4));
-                userList.add(user);
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
-        db.close();
-        return userList;
-    }
+//    public ArrayList<DSS03_declare> getAllUsers() {
+//        ArrayList<DSS03_declare> userList = new ArrayList<>();
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
+//        if (cursor.moveToFirst()) {
+//            do {
+//                DSS03_declare user = new DSS03_declare();
+//                user.setId(Integer.parseInt(cursor.getString(0)));
+//                user.setName(cursor.getString(1));
+//                user.setAge(Integer.parseInt(cursor.getString(2)));
+//                user.setGender(cursor.getString(3));
+//                user.setAddress(cursor.getString(4));
+//                userList.add(user);
+//            } while (cursor.moveToNext());
+//        }
+//        cursor.close();
+//        db.close();
+//        return userList;
+//    }
 }
