@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
-public class UserDatabase extends SQLiteOpenHelper {
+public class DSS03_DB extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "UserDatabase";
     private static final int DATABASE_VERSION = 1;
@@ -24,7 +24,7 @@ public class UserDatabase extends SQLiteOpenHelper {
     private static final String KEY_GENDER = "gender";
     private static final String KEY_ADDRESS = "address";
 
-    public UserDatabase(Context context) {
+    public DSS03_DB(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -46,7 +46,7 @@ public class UserDatabase extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void addUser(User user) {
+    public void addUser(DSS03_declare user) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(KEY_NAME, user.getName());
@@ -57,13 +57,13 @@ public class UserDatabase extends SQLiteOpenHelper {
         db.close();
     }
 
-    public ArrayList<User> getAllUsers() {
-        ArrayList<User> userList = new ArrayList<>();
+    public ArrayList<DSS03_declare> getAllUsers() {
+        ArrayList<DSS03_declare> userList = new ArrayList<>();
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
         if (cursor.moveToFirst()) {
             do {
-                User user = new User();
+                DSS03_declare user = new DSS03_declare();
                 user.setId(Integer.parseInt(cursor.getString(0)));
                 user.setName(cursor.getString(1));
                 user.setAge(Integer.parseInt(cursor.getString(2)));

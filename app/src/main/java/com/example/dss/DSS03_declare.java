@@ -4,7 +4,7 @@ package com.example.dss;
 //}
 
 
-public class User {
+public class DSS03_declare {
 
     private int id;
     private String name;
@@ -12,10 +12,10 @@ public class User {
     private String gender;
     private String address;
 
-    public User() {
+    public DSS03_declare() {
     }
 
-    public User(String name, int age, String gender, String address) {
+    public DSS03_declare(String name, int age, String gender, String address) {
         this.name = name;
         this.age = age;
         this.gender = gender;
